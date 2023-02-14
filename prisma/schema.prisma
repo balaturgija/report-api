@@ -27,7 +27,7 @@ model User {
 model Home {
   id                    Int @id @default(autoincrement())
   address               String
-  number_of_beadrooms   Int
+  number_of_bedrooms    Int
   number_of_bathrooms   Int
   city                  String
   list_date             DateTime @default(now())
