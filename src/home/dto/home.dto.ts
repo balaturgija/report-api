@@ -75,30 +75,30 @@ export class Image {
 export class CreateHomeDto {
   @IsString()
   @IsNotEmpty()
-  address?: string;
+  address: string;
 
   @IsNumber()
   @IsPositive()
-  numberOfBedrooms?: number;
+  numberOfBedrooms: number;
 
   @IsNumber()
   @IsPositive()
-  numberOfBathrooms?: number;
+  numberOfBathrooms: number;
 
   @IsString()
   @IsNotEmpty()
-  city?: string;
+  city: string;
 
   @IsNumber()
   @IsPositive()
-  price?: number;
+  price: number;
 
   @IsNumber()
   @IsPositive()
-  landSize?: number;
+  landSize: number;
 
   @IsEnum(PropertyType)
-  propertyType?: PropertyType;
+  propertyType: PropertyType;
 
   @IsArray()
   @ValidateNested({ each: true })
@@ -110,34 +110,34 @@ export class UpdateHomeDto {
   @IsOptional()
   @IsString()
   @IsNotEmpty()
-  address: string;
+  address?: string;
 
   @IsOptional()
   @IsNumber()
   @IsPositive()
-  numberOfBedrooms: number;
+  numberOfBedrooms?: number;
 
   @IsOptional()
   @IsNumber()
   @IsPositive()
-  numberOfBathrooms: number;
+  numberOfBathrooms?: number;
 
   @IsOptional()
   @IsString()
   @IsNotEmpty()
-  city: string;
+  city?: string;
 
   @IsOptional()
   @IsNumber()
   @IsPositive()
-  price: number;
+  price?: number;
 
   @IsOptional()
   @IsNumber()
   @IsPositive()
-  landSize: number;
+  landSize?: number;
 
   @IsOptional()
   @IsEnum(PropertyType)
-  propertyType: PropertyType;
+  propertyType?: PropertyType;
 }
